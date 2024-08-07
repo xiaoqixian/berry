@@ -8,6 +8,18 @@
         </div>
       </div>
       <mid />
+      <div id="profile">
+        <div class="content">
+          <div class="avatar">
+            <img alt="" loading="lazy" decoding="async" data-nimg="fill" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="../assets/images/avatar.png">
+          </div>
+          <div class="words">
+            <div class="name">Kalei</div>
+            <div class="role">Full-Heap Developer</div>
+            <div class="motto">I love Rust</div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -47,8 +59,10 @@ main {
 #tags {
   overflow: scroll;
   position: sticky;
+  top: 78px;
   grid-column: span 2 / span 2;
   scrollbar-width: none;
+  height: calc(100vh - 78px);
 }
 
 #tags-top {
@@ -75,4 +89,60 @@ main {
   flex-shrink: 0;
   cursor: pointer;
 }
+
+#profile {
+  display: block;
+  grid-column: span 3 / span 3;
+  position: sticky;
+  top: 78px;
+  scrollbar-width: none;
+  height: calc(100vh - 78px);
+}
+#profile .content {
+  padding: 1rem;
+  margin-bottom: 2.25rem;
+  border-radius: 1rem;
+  width: 100%;
+  background-color: white;
+}
+#profile .content .avatar {
+  position: relative;
+  width: 100%;
+}
+#profile .content .avatar::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#profile .content .avatar img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+#profile .words {
+  display: flex;
+  padding: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+#profile .words .name {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+#profile .words .role {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(111, 111, 111);
+}
+
+
 </style>

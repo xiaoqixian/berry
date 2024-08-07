@@ -1,6 +1,6 @@
 <template>
-  <a :href="path">
-    <div class="post">
+  <a class="post" :href="path">
+    <article>
       <div class="category">{{ category }}</div>
       <div class="thumbnail" v-if="thumbnail != null">
         <img loading="lazy" alt="Image Not Found" :src="thumbnail"/>
@@ -14,12 +14,12 @@
         <div class="tags">
           <div class="tag"
             v-for="(tag, index) in tags"
-            v-if="index < 5">
+            v-show="index < 7">
             {{ tag }}
           </div>
         </div>
       </div>
-    </div>
+    </article>
   </a>
 </template>
 
@@ -46,7 +46,7 @@ export default {
 </script>
 
 <style scoped>
-.post {
+.post article {
   overflow: hidden;
   position: relative;
   margin-bottom: 1.5rem;
@@ -56,6 +56,10 @@ export default {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   color: black;
+}
+
+.post article:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 .post .category {
@@ -70,6 +74,18 @@ export default {
   width: 100%;
   background-color: rgb(248, 248, 248);
   padding-bottom: 50%;
+}
+
+.post .thumbnail img {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
 }
 
 .post .content .title {

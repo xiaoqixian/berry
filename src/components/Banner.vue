@@ -22,6 +22,8 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
   width: 100%;
   margin-bottom: 32px;
+  position: sticky;
+  top: 0px;
 }
 
 #banner {

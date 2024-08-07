@@ -38,7 +38,7 @@ const posts = [
   {
     path: "/frontend",
     category: "Frontend",
-    thumbnail: null,
+    thumbnail: "src/assets/images/cover.jpeg",
     title: "Welcome to the berry blog",
     date: "Aug 4, 2024",
     tags: ["Frontend", "Vue"]
@@ -49,8 +49,48 @@ const posts = [
     thumbnail: null,
     title: "Rust HTTP framework design",
     date: "Aug 4, 2024",
-    tags: ["Rust", "Network"]
-  }
+    tags: ["Rust", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network"]
+  },
+  {
+    path: "/rust",
+    category: "Rust",
+    thumbnail: null,
+    title: "Rust HTTP framework design",
+    date: "Aug 4, 2024",
+    tags: ["Rust", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network"]
+  },
+  {
+    path: "/rust",
+    category: "Rust",
+    thumbnail: null,
+    title: "Rust HTTP framework design",
+    date: "Aug 4, 2024",
+    tags: ["Rust", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network"]
+  },
+  {
+    path: "/rust",
+    category: "Rust",
+    thumbnail: null,
+    title: "Rust HTTP framework design",
+    date: "Aug 4, 2024",
+    tags: ["Rust", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network"]
+  },
+  {
+    path: "/rust",
+    category: "Rust",
+    thumbnail: null,
+    title: "Rust HTTP framework design",
+    date: "Aug 4, 2024",
+    tags: ["Rust", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network"]
+  },
+  {
+    path: "/rust",
+    category: "Rust",
+    thumbnail: null,
+    title: "Rust HTTP framework design",
+    date: "Aug 4, 2024",
+    tags: ["Rust", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network", "Network"]
+  },
 ]
 
 export default {
