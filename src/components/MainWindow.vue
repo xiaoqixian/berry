@@ -19,6 +19,16 @@
             <div class="motto">I love Rust</div>
           </div>
         </div>
+        <div class="contact">
+          <span class="emoji">💬</span>
+           Contact
+        </div>
+        <div class="links">
+          <a v-for="link in links" :href="link.link">
+            <img alt="" :src="link.icon"/>
+            <div class="name">{{ link.name }}</div>
+          </a>
+        </div>
       </div>
     </div>
   </main>
@@ -27,11 +37,24 @@
 <script>
   import Mid from './Mid.vue'
   const tags = ["rust", "cpp", "python", "分布式"]
+  const links = [
+    {
+      icon: "src/assets/images/github.svg",
+      name: "Github",
+      link: "https://github.com/xiaoqixian"
+    },
+    {
+      icon: "src/assets/images/email.svg",
+      name: "Email",
+      link: ""
+    }
+  ]
 
   export default {
     setup: function() {
       return {
-        tags
+        tags,
+        links
       }
     },
     components: {
@@ -144,5 +167,36 @@ main {
   color: rgb(111, 111, 111);
 }
 
+#profile .contact {
+  padding: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+#profile .links {
+  display: flex;
+  padding: 0.25rem;
+  flex-direction: column;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+#profile .links a {
+  display: flex;
+  padding: 0.75rem;
+  gap: 0.75rem;
+  align-items: center;
+  border-radius: 1rem;
+  color: rgb(111, 111, 111);
+  cursor: pointer;
+}
+
+#profile .links a img {
+  height: 24px;
+}
+
+#profile .links a .name {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
 
 </style>

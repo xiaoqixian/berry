@@ -24,6 +24,8 @@
   margin-bottom: 32px;
   position: sticky;
   top: 0px;
+  z-index: 30;
+  background-color: rgb(248, 248, 248);
 }
 
 #banner {

@@ -23,10 +23,19 @@
   width: 100%;
   background-color: rgb(237, 237, 237);
   margin-bottom: 1rem;
+  top: 78px;
+  position: sticky;
 }
 input {
   all: unset;
   box-sizing: border-box;
+}
+
+#posts {
+  top: 165px;
+  height: calc(100vh - 165px);
+  overflow: auto;
+  scrollbar-width: none;
 }
 </style>
 

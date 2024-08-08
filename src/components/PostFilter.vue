@@ -15,11 +15,14 @@
 
 <style scoped>
 #filter {
+  background-color: rgb(248, 248, 248);
   display: flex;
   margin-bottom: 1rem;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(226, 226, 226);
+  top: 140px;
+  position: sticky;
 }
 
 #all-posts {
